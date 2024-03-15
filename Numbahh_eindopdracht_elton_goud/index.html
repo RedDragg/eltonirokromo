@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <video autoplay muted loop class="myVideo" id="achtergrondVideo">
+        <source src="./img/road.mp4" type="video/mp4">
+      </video>
+
+      <button id="fixedButton" class="fixed-button">Afspelen / Pauzeren</button>
+
+    <div class="wrapper">      
+        
+        <div class="div_backblock">
+            <h1 id="mijnH1">Numbahh</h1>
+            <form id="guessForm">
+                <label for="guessInput">Voer een getal in tussen 1 en 100:</label>
+                <div class="inputborder">
+                    <input type="number" min="1" max="100" id="guessInput">
+                </div>
+                <button type="submit" class="submit"><span class="text">Gokken</span></button>
+            </form>
+            <p id="result"></p>
+                <div class="guessWrapper">
+                    <p id="guesses"></p>
+                    
+                </div>
+                <div class="guessWrapper">
+                    <p id="time"></p>
+                </div>
+                
+            <script src="js/script.js"></script>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="button" id="mijnKnop2">Road</button>
+        <button class="button" id="mijnKnop3">Neon</button>
+        <button class="button" id="mijnKnop5">Tunnel 1</button>
+        <button class="button" id="mijnKnop6">Tunnel 2</button>
+        <button class="button" id="mijnKnop7">Tunnel 3</button>
+      </div>
+
+    <script src="./js/test.js"></script>
+</body>
+</html>
+
+<!--Bronnen:
+    Achtergrond videos : www.Pixabay.com
+    audio : www.Pixabay.com
+    CSS button : https://getcssscan.com/css-buttons-examples
+    Submit button = Button 64
+    Achtergrond Button = Button 89
+-->

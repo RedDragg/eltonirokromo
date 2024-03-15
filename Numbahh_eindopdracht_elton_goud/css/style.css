@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .fixed-button {
+    z-index: 9999;
+    position: fixed;
+    top: 5em;
+
+  }
+  
+
+  .container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    gap: .5em;
+  }
+  
+  .button {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #373B44;
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .button:hover,
+  .button:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+    color: #fff;
+  }
+  
+  .button:active {
+    background: var(--color);
+    color: #fff;
+  }
+  
+  .myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  } 
+
+  h1 {
+    text-align: center;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  #guessForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+div.inputborder {
+    width: 5em;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  #guessInput {
+    width: 2.5em;
+    height: 2.5em;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    font-size: 2em;
+    border-radius: 0.5em;
+    text-align: center;
+  }
+
+  .submit {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .submit:active,
+  .submit:hover {
+  outline: 0;
+}
+
+.submit span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.submit:hover span {
+  background: none;
+}
+
+
+
+  #result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+div.wrapper{
+    position: fixed;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    padding: .2em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+div.div_backblock {
+    background-color: #e8ecf3;
+    align-self: center;
+    padding: 1.8em;
+}
+
+div.guessWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        
+.confetti{
+    background-image: url("https://media.giphy.com/media/PMV7yRpwGO5y9p3DBx/source.gif");
+    background-size: contain;
+    color: white
+    }
+
+#time {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
