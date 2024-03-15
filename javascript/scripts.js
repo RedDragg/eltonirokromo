@@ -159,13 +159,13 @@ function worklinkopen3(){
     sidemenu3.style.right = "0";
 }
 function worklinkclose(){
-    sidemenu.style.right = "-99rem";
+    sidemenu.style.right = "-140rem";
 }
 function worklinkclose2(){
-    sidemenu2.style.right = "-99rem";
+    sidemenu2.style.right = "-140rem";
 }
 function worklinkclose3(){
-    sidemenu3.style.right = "-99rem";
+    sidemenu3.style.right = "-140rem";
 }
 
 
