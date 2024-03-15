@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/algemeen.css">
+  <title>Index-Elton</title>
+</head>
+<body>
+    <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html" class="active">home</a></li>
+        <li><a href="./internetstandaarden.html">Opdrachten</a></li>
+        <li><a href="./animation.html">Animate</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1 class="animate__animated animate__bounce">Elton Irokromo</h1>
+  </header>
+
+    <main>
+      <article>
+      <h2>Welkom op mijn website!💥💥</h2>
+         <p>Kom hier wonderen meemaken </p><br>
+         <p class="turn">🌑</p>
+         <p class="turn">🌒</p>
+         <p class="turn">🌓</p>
+         <p class="turn">🌔</p>
+         <p class="turn">🌕</p>
+         <p class="turn">🌖</p>
+         <p class="turn">🌗</p>
+         <p class="turn">🌘</p>
+
+      </article>
+
+      <article class="homeart2">
+      <h3>Kies een leuke website uit!💡</h3>
+      <span>
+          <a href="./animation.html" class="rainbow rainbow-5">Animations</a>
+          <a href="./internetstandaarden.html" class="bn5">Opdrachten</a>
+        </span>
+      </article>
+
+      <article class="articleswitch2">
+      <h2><strong>Waarom zijn beren bruin?</strong></h2> 
+      <input type="button" id="button2" value="Antwoord">
+      <hr>
+      <h3>omdat ze s'winters in hun hol slapen!!!</h3>
+       </article>
+
+      <article class="articleswitch">
+      <h2><strong>Hoe noem je een koninklijke drol?</strong></h2> 
+      <input type="button" id="button" value="Antwoord">
+      <hr>
+      <h3>Een majeschijt</h3>
+      </article>
+
+     <article class="articleswitch3">
+      <h2><strong>Wat is de overeenkomst tussen je billen en de woestijn?</strong></h2> 
+      <input type="button" id="button3" value="Antwoord">
+      <hr>
+      <h3>Kaktussen...</h3>
+      </article>
+
+  </main>
+
+    <footer>
+      <h4>Bronvermelding</h4>
+      <ul>
+        <li><a href="https://www.w3.org/Style/Examples/007/center.en.html#block">Centering Things</a></li>
+        <li><a href="https://freefrontend.com/css-button-hover-effects/">CSS Button Hover</a></li>
+        <li><a href="https://stackoverflow.com/questions/4980525/css-center-display-inline-block">Emoji</a></li>
+      </ul>
+      <p>Copyright internetstandaarden 2022 Elton Irokromo</p>
+    </footer>
+   
+  <script>
+
+      document.getElementById("button").addEventListener("click", controlAnimation);
+
+
+      function controlAnimation() {
+        const box = document.querySelector('.articleswitch');
+        box.classList.remove('animate');
+        setTimeout(() => {
+          box.classList.add('animate');
+        }, 0);
+      }
+
+      document.getElementById("button2").addEventListener("click", controlAnimation2);
+
+
+      function controlAnimation2() {
+        const box = document.querySelector('.articleswitch2');
+        box.classList.remove('animate2');
+        setTimeout(() => {
+          box.classList.add('animate2');
+        }, 0);
+      }
+
+      document.getElementById("button3").addEventListener("click", controlAnimation3);
+
+
+      function controlAnimation3() {
+        const box = document.querySelector('.articleswitch3');
+        box.classList.remove('animate3');
+        setTimeout(() => {
+          box.classList.add('animate3');
+        }, 0);
+      }
+</script>
+    
+
+</body>
+</html>

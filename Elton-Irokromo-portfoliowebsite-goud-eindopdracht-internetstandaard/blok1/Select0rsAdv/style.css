@@ -1,0 +1,69 @@
+/* Stylen van de blokken en centrereren */
+
+body {
+  font-family: sans-serif;
+  background: yellow;
+}
+
+main {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+article {
+  background: white;
+  padding: 2em;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+strong {
+  font-family: monospace;
+}
+
+/* 👇 Schrijf hieronder je eigen CSS
+
+/* 1. Children*/
+p:nth-child(3) { 
+color: green; 
+}
+
+p:nth-child(4) {
+color: blue;
+}
+
+/* 2. Combinator */
+article:nth-child(2) p:nth-child(3) {
+color: black;
+}
+article:nth-child(2) span:nth-child(1) {
+color: tomato;
+}
+
+/* 3. Sibling */
+article:nth-child(3) p:nth-child(3) {
+color: black;
+}
+
+article:nth-child(3) span:nth-child(4) {
+color: yellow;
+}
+
+article:nth-child(3) p:nth-child(5) {
+color: blue;
+}
+
+
+/* 4. Descendant */
+article:nth-child(4) ul li span {
+color: blue;
+}
+
+article:nth-child(4) ul li ul li {
+color: red;
+}
+
+/* 5. Eerste regel */
+article:nth-child(5) p {
+color: hotpink;
+}

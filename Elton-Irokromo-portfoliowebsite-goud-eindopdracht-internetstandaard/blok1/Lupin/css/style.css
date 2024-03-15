@@ -1,0 +1,28 @@
+body{
+	background-color: black;
+}
+
+header {
+	height: 40em;
+	background: url(../img/LupinHero.jpeg);
+  	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+ 	background-position: top right; 
+}
+
+.main-heading, p{
+	color: white;
+}
+
+h1, h2, h3 {
+	color: #A8A8A8;
+	display: inline;
+}
+ ul li {
+ 	display: inline-block;
+ 	margin: 0 1px 6px 1px;
+ }
+
+a {
+	color: #9e9e9e;
+}

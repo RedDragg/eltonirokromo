@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  background: yellow;
+}
+
+main {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+article {
+  background: white;
+  padding: 2em;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+
+strong {
+  font-family: monospace;
+}
+
+a {
+  background-color: hotpink;
+  color: white;
+  text-decoration-line: none;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+a:hover {
+  background-color: blueviolet;
+  transition: background ease 1s;
+}
+
+a:focus {
+  border-width: 2em;
+}
+
+a:active {
+  font-weight: bold;
+  color: hotpink;
+  transition: background ease 3s;
+}

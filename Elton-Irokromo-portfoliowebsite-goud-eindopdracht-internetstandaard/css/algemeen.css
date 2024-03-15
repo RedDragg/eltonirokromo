@@ -1,0 +1,761 @@
+body {
+  background-color: #ff3399;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+main {
+  width: 50%;
+  max-width: 80em;
+  margin: 0 auto;
+  border-radius: 2em;
+}
+/* Begin Nav */
+header nav ul li a {
+  display: inline;
+  text-decoration: none;
+  background-color: #669900;
+  border: none;
+  border-radius: 2em;
+  color: white;
+  padding: .4em 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: .5em .1em;
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  background:  #99ccff;
+}
+
+nav li {
+  display: inline;
+  text-decoration: none;
+}
+
+nav {
+  text-align: center;
+}
+
+.active {
+  background: #bf00ff;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  color: #555;
+}
+
+footer {
+  width: 60%;
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer p {
+  text-align: right;
+}
+
+/* einde nav */
+/* Begin Main content */
+
+article {
+  background: white;
+  padding: 2em;
+  margin-top: 5vh;
+  margin-bottom: 6vh;
+  border-radius: 1em;
+  text-align: center;
+}
+
+
+h3, h2 {
+  color: #555;
+  font-weight: 800;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+h2.opdracht1{
+  color: #555;
+}
+
+article h3{
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 1em;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+p {
+  text-align: center;
+}
+
+article.homeart2{
+  background: #343A40;
+}
+
+img {
+  max-width: 50%;
+  border: 2px solid purple;
+  display: inline;
+  border-radius: 2em;
+}
+
+
+/* einde Main content */
+/* draaiende manen */
+
+.turn {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 60px;
+  animation: rotating 2s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes rotating {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Einde draaiende manen */
+/* Button rainbow */
+.rainbow{
+  background-color: #343A40;
+  border-radius: 4px;  
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 16px;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  font-size: 30px;
+}
+
+
+.rainbow-5:hover{
+   background-image:     linear-gradient(
+      to right, 
+      #E7484F,
+      #E7484F 16.65%,
+      #F68B1D 16.65%,
+      #F68B1D 33.3%,
+      #FCED00 33.3%,
+      #FCED00 49.95%,
+      #009E4F 49.95%,
+      #009E4F 66.6%,
+      #00AAC3 66.6%,
+      #00AAC3 83.25%,
+      #732982 83.25%,
+      #732982 100%,
+      #E7484F 100%
+     
+     
+     
+    );
+  animation:slidebg 2s linear infinite;
+}
+
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+.follow{
+  margin-top: 40px;
+}
+
+.follow a{
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* einde button Rainbow*/
+/* Button glowing */
+.bn5 {
+  padding: 0.5em 1em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #343A40;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 30px;
+}
+  
+
+
+.bn5:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bn5:active {
+  color: #000;
+}
+
+.bn5:active:after {
+  background: transparent;
+}
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #191919;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+/* End Button Glowing */
+/* Button Jokes */
+input {
+  background-color: #f4511e;
+  border: none;
+  border-radius: 1em;
+  color: white;
+  padding: 1em 2em;
+  text-align: right;
+  font-size: 1em;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input:hover {opacity: 1}
+
+.articleswitch.animate {
+  animation: switch 5s  alternate;
+}
+
+
+@keyframes switch {
+  0% {
+    background: #fff;
+  }
+  33% {
+    background: #001F3F;
+  }
+  66% {
+    background: #FF4136;
+  }
+  100% {
+    background: #fff;
+  }
+  
+}
+
+.articleswitch2.animate2 {
+  animation: switch2 5s  alternate;
+}
+
+
+
+@keyframes switch2 {
+  0% {
+    background: #fff;
+  }
+  33% {
+    background: #004d1a;
+  }
+  66% {
+    background: #0000ff;
+  }
+  100% {
+    background: #fff;
+  }
+  
+}
+
+.articleswitch3.animate3 {
+  animation: switch3 5s  alternate;
+}
+
+
+
+@keyframes switch3 {
+  0% {
+    background: #fff;
+  }
+  33% {
+    background: #336699;
+  }
+  66% {
+    background: #cc0099;
+  }
+  100% {
+    background: #fff;
+  }
+  
+}
+ /* Einde button Jokes */
+article.opdrachtart a, article.opdrachtart2 a, article.opdrachtart3 a, article.opdrachtart1 a {
+  text-align: center;
+  text-decoration: none;
+
+}
+/* Einde main content*/
+/* Begin week 1 */
+
+article.opdrachtart a:nth-child(3) img:hover {
+  transform: scale(1.2);
+  transition: 2s;
+  border: 2px solid red;
+}
+
+article.opdrachtart a:nth-child(6) img:hover {
+  transform: rotate(0.5turn);
+  transition: 2s;
+  border: 2px solid #3B0F83;
+}
+
+/* Einde week 1 */
+/* Begin week 2 */
+
+article.opdrachtart1 a:nth-child(3) img {
+  animation: s1 3s infinite;
+
+  border: 2px solid #108416;
+}
+
+article.opdrachtart1 a:nth-child(5) img {
+  animation: s2 3s infinite;
+  border: 2px solid #101E84;
+}
+
+article.opdrachtart1 a:nth-child(7) img {
+  animation: s1 3s infinite;
+  border: 2px solid #9BDACB;
+}
+
+article.opdrachtart1 a:nth-child(9) img {
+  animation: s2 3s infinite;
+  border: 2px solid #D3DA9A;
+}
+
+/* Einde week 2 */
+/* Begin week 3 */
+
+article.opdrachtart2 a:nth-child(3) img {
+  animation: s3 5s infinite;
+  border: 2px solid #3B0F83;
+}
+
+article.opdrachtart2 a:nth-child(5) img {
+  animation: s4 8s infinite;
+  border: 2px solid #3B0F83;
+}
+
+article.opdrachtart2 a:nth-child(7) img {
+  animation: s3 4s infinite;
+  border: 2px solid #3B0F83;
+}
+
+article.opdrachtart2 a:nth-child(9) img {
+  animation: s4 7s infinite;
+  border: 2px solid #3B0F83;
+}
+
+/* einde week 3 */
+/* Begin Animaties */
+
+@keyframes s1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50%{
+    transform: translate(120px, -50%);
+  }
+  100%{
+    transform: translate(0px, 0%);
+  }
+}
+
+@keyframes s2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50%{
+    transform: translate(-120px, -50%);
+  }
+  100%{
+    transform: translate(0px, 0%);
+  }
+}
+
+@keyframes s3 {
+  0% {
+    transform: rotate(0, 0);
+  }
+  33%{
+    transform: rotate(1.0turn);
+  }
+  66%{
+    transform: rotate(0.5turn);
+  }
+  100%{
+    transform: rotate(0, 0);
+  }
+}
+
+@keyframes s4 {
+  0% {
+    transform: rotate(0, 0);
+  }
+  33%{
+    transform: rotate(0.5turn);
+  }
+  66%{
+    transform: rotate(1.0turn);
+  }
+  100%{
+    transform: rotate(0, 0);
+  }
+}
+
+/*Einde Animaties */
+/* Begin visibility week 3 */
+
+.sibling-fade { visibility: hidden; }
+.sibling-fade > * { visibility: visible; }
+.sibling-fade > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+.sibling-fade:hover > * { opacity: 0.4; transform: scale(0.9); }
+.sibling-fade > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+/* Einde visibility week 3 */
+/* week 5 */
+
+article.opdrachtart3 img:hover {
+  transform: scale(5.5);
+  transition: 1.5s;
+}
+.inlineimg {
+  display: inline-block;
+  width: 100%;
+}
+/* einde week 5 */
+/* begin animation page */
+
+/* Article 1 Box animation van links naar rechts*/
+
+.article11 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: example 5s infinite alternate;
+}
+
+.article12 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: example 4.75s infinite alternate;
+}
+
+.article13 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: example 4.5s infinite alternate;
+}
+
+.article14 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: example 4.25s infinite alternate;
+}
+
+.article15 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: example 4s infinite alternate;
+}
+
+@keyframes example {
+  0%   {background-color:#ff0066; left:0px; top:0px;}
+  10%  {background-color:#33cccc;}
+  20%  {background-color:#66ffcc;}
+  30%  {background-color:#00cc00;}
+  40%  {background-color:#99ff33;}
+  50%  {background-color:#ffcc00;left:31vw; top:0px;}
+  60%  {background-color:#ff6666;}
+  70%  {background-color:#ff33cc;}
+  80%  {background-color:#cc33ff;}
+  90%  {background-color:#3333cc;}
+  100% {background-color:#ff0066; left:0px; top:0px;}
+}
+
+/* einde Article 1 Box animation van links naar rechts*/
+/* Article 2 Box Scale */
+
+article.animationart1 {
+  background: white;
+  padding: 2em;
+  padding-bottom: 8vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-radius: 1em;
+}
+
+.element {
+  height: 20vh;
+  width: 10vw;
+  margin: 0 auto;
+  margin-top: 4em;
+  background-color: #cc0066;
+  animation: stretch 1.5s ease-out alternate infinite none running;
+  animation-delay: 0;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: #cc0066;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: #ffcc99;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: #ccff33;
+  }
+}
+
+/* einde Article 2 Box scale*/
+/* Article 4 Animation */
+
+  input {
+  background-color: #f4511e;
+  border: none;
+  border-radius: 1em;
+  color: white;
+  padding: 1em 2em;
+  text-align: left;
+  font-size: 1em;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input:hover {opacity: 1}
+
+#article21 {
+  width: 100px;
+  height: 100px;
+  background-color: #9999ff;
+  position: relative;
+}
+
+#article21.animate {
+  animation: click 5s  alternate;
+}
+
+@keyframes click {
+    0% {
+    rotate: 0deg;
+    left:0px; top:0px;
+  }
+
+  25% {
+    rotate: y 90deg;
+    scale: 0.5;
+    background-color: #ff9933;
+  }
+  50% {
+    rotate: 180deg;
+    background-color: #ff66ff;
+    left:31vw; top:0px;
+
+  }
+  75% {
+    rotate: x 270deg;
+    border-radius: 50%;
+    background-color: #339966;
+  }
+  100% {
+    rotate: 360deg;
+    background-color: #9999ff;
+    left:0px; top:0px;
+  }
+}
+/* Einde Article 4 Animation */
+/* Article 3 vier box */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.box {
+  width: 6.25em;
+  height: 6.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  margin: 0 auto;
+}
+
+.box:first-child {
+  background-color: #cc0066;
+  animation: loader 2s infinite;
+}
+
+.box:nth-child(2) {
+  background-color: #99cc00;
+  animation: loader 3s infinite;
+}
+
+.box:nth-child(3) {
+  background-color: #ffff66;
+  animation: loader 4s infinite;
+}
+
+.box:last-child {
+  background-color: #9999ff;
+  animation: loader 5s infinite;
+}
+
+@keyframes loader {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: y 90deg;
+    scale: 0.5;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  75% {
+    rotate: x 270deg;
+    border-radius: 50%;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+
+
+
+/* einde Article 3 vier box*/
+
+/* Begin contact */
+
+form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-radius: 1em;
+}
+
+input:focus {
+  background-color: #ffccff;
+}
+
+form:focus-within {
+  background: #f9f98b;
+  border-radius: 1em;
+} 
+
+form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5f5;
+  font-size: 16px;
+} 
+
+form button {
+  padding: 15px;
+  background: hotpink;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 2em;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/algemeen.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <title>Animaties-Elton</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">home</a></li>
+        <li><a href="./internetstandaarden.html">Opdrachten</a></li>
+        <li><a href="./animation.html" class="active">Animate</a></li>
+        <li><a href="./contact.html" >Contact</a></li>
+      </ul>
+    </nav>
+    <h1 class="animate__animated animate__flip">Elton Irokromo</h1>
+  </header>
+
+ <main>
+
+    <article>
+      <h2><strong>Animation🌈</strong></h2>
+      <hr>
+      <div class="article11"></div>
+      <div class="article12"></div>
+      <div class="article13"></div>
+      <div class="article14"></div>
+      <div class="article15"></div>
+    </article>
+
+    <article class="animationart1">
+      <h2><strong>Animation Box🍓</strong></h2> 
+      <hr>
+      <div class="element"></div>
+    </article>
+
+    <article>
+      <h2><strong>Animation Vierboxs🍑</strong></h2> 
+      <hr>
+      <div class="container">
+      <div class="box">
+      </div>
+      <div class="box">
+      </div>
+      <div class="box">
+      </div>
+      <div class="box">
+      </div>
+     </div>
+    </article>
+
+        <article>
+      <h2><strong>Animation Click🍍</strong></h2> 
+      <input type="button" id="button" value="Klik mij!!">
+      <hr>
+      <div id="article21"></div>
+    </article>
+  </main>
+
+    <footer>
+      <h4>Bronvermelding</h4>
+      <ul>
+        <li><a href="https://www.w3schools.com/css/css3_animations.asp">W3 CSS Animations</a></li>
+        <li><a href="https://css-tricks.com/almanac/properties/a/animation/">Animation stretch</a></li>
+        <li><a href="https://css-tricks.com/almanac/properties/r/rotate/">Animation rotate</a></li>
+        <li><a href="https://stackoverflow.com/questions/71486798/trigger-css-animation-on-div-click">Animation on Click</a></li>
+      </ul>
+      <p>Copyright internetstandaarden 2022 Elton Irokromo</p>
+    </footer>
+
+    <script>
+      document.getElementById("button").addEventListener("click", controlAnimation);
+
+
+      function controlAnimation() {
+        const box = document.querySelector('#article21');
+        box.classList.remove('animate');
+        setTimeout(() => {
+          box.classList.add('animate');
+        }, 0);
+      }
+    </script>
+
+</body>
+
+</html>

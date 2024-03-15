@@ -1,0 +1,63 @@
+/* Om de vlakken in een grid te zetten */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45em;
+}
+
+/* Standaard wat hoogte en breedte op de divs en een border */
+div {
+  width: 15em;
+  height: 15em;
+  border: 0.2em solid black;
+}
+
+/* 👇 Schrijf hieronder je eigen CSS*/
+
+.vlak-1 {
+  background: red;
+  width: 20em;
+
+}
+
+.vlak-2 {
+  background: white;
+  height: 20em;
+}
+
+.vlak-3 {
+  background: blue;
+  width: 50vh;
+}
+
+.vlak-4 {
+  background: white;
+  width: 25vw;
+}
+
+.vlak-5 {
+  background: yellow;
+  width: 33%;
+}
+
+.vlak-6 {
+  background: white;
+}
+
+.vlak-7 {
+  background: black;
+}
+
+.vlak-8 {
+  background: white;
+}
+
+.vlak-9 {
+  background: white;
+}

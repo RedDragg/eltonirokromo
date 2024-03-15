@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Formulieren</title>
+</head>
+<body>
+	<header>
+		<h1>Voorbeeld formulier</h1>
+	</header>
+
+<main>
+	<h2>Formulier</h2>
+	<form action="./submitted.hmtml">
+			<fieldset>
+				<legend>Gegevens</legend>
+				<label for="text">Naam: </label>
+				<input type="text" id="naam" value="naam" name="formz">
+				
+				<label for="text">Achternaam: </label>
+				<input type="text" id="achternaam" value="achternaam" name="formz">
+			</fieldset>
+			<fieldset>
+				<label for="text">Hobby: </label>
+				<input type="text" id="hobby" value="hobby" name="formz">
+			</fieldset>
+			<fieldset>
+				<label for="email">Email: </label>
+				<input type="email" id="email" name="email" required>
+			</fieldset>
+			<fieldset>
+				<label for="date">Geboortedatum: </label>
+				<input type="date" id="date" value="date" name="formz">
+			</fieldset>
+			<fieldset>
+				<label for="color">Favoriete kleur: </label>
+				<input type="color" id="color" value="color" name="formz">
+			</fieldset>
+			<input type="submit" value="Verzenden">
+	</form>
+</main>
+
+</body>
+</html>

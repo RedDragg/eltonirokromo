@@ -1,0 +1,50 @@
+/* Stylen van de blokken en centrereren */
+
+body {
+  font-family: sans-serif;
+  background: yellow;
+}
+
+main {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+article {
+  background: white;
+  padding: 2em;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+strong {
+  font-family: monospace;
+}
+
+
+
+/* 👇 Schrijf hieronder je eigen CSS
+
+/* 1. Gebruik de Type selector */
+em {
+  color: olivedrab;
+}
+
+/* 2. Gebruik de Class selector */
+p.tomato { 
+  color: tomato;
+ }
+
+/* 3. Gebruik de ID selector */
+p#goldenrod {
+  color: goldenrod;
+}
+
+/* 4. Lijstje in Lijstje */
+ul li li { 
+color: peachpuff; }
+
+/* 5. De eerste */
+article:last-child p:nth-last-child(3) {
+  color: cornflowerblue;
+}

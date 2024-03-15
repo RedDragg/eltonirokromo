@@ -1,0 +1,44 @@
+/* Het aanpassen van de breedte van de afbeelding */
+img {
+  width: 20%;
+}
+
+/* Zet de tekst in het midden van de pagina */
+body {
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1{
+  font-size: 400%;
+  color: blueviolet;
+}
+
+h2{
+  color: green;
+}
+
+h3{
+  color: orange;
+}
+
+p:nth-last-child(1){
+  font-size: 150%;
+  color: royalblue;
+}
+
+p:nth-last-child(5) {
+  font-size: 150%;
+  color: darkred;
+}
+
+p:nth-last-child(3) {
+  font-size: 150%;
+  color: violet;
+
+}
+
+
+
+/* 👇 Schrijf je CSS voor de typografie */

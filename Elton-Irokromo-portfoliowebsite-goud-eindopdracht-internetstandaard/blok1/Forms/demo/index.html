@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Formulieren</title>
+</head>
+<body>
+	<header>
+		<h1>An example Form</h1>
+	</header>
+
+<main>
+	<h2>Please provide us with your information</h2>
+	<form action="./submitted.hmtml">
+			<fieldset>
+				<legend>Pick your favorite color!</legend>
+
+				<input type="radio" id="blue" value="blue" name="favoriteColor">
+				<label for="blue">Blue</label>
+
+				<input type="radio" id="red" value="red" name="favoriteColor">
+				<label for="blue">Red</label>
+
+				<input type="radio" id="green" value="green" name="favoriteColor">
+				<label for="blue">Green</label>
+			</fieldset>
+			<fieldset>
+				<legend>Personal info</legend>
+				<label for="age">Enter your age:</label>
+				<input type="number" id="age" name="age" min="18" max="25" required>
+				<label for="email">Enther your Email:</label>
+				<input type="email" id="email">
+			</fieldset>
+			<input type="submit" value="Submit me!">
+	</form>
+</main>
+
+</body>
+</html>

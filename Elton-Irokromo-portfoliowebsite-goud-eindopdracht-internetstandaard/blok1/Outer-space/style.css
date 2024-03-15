@@ -1,0 +1,27 @@
+/* ✨ Space styling */
+
+body {
+  background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/57c65d5f-1d28-4bab-a4cc-564d0126d063/d7z0h0p-2276b3ce-dab9-4ea5-b86f-cdf06a6dd021.png/v1/fill/w_676,h_766,q_80,strp/animated_pixel_stars___box_background_by_driftwoodbones_d7z0h0p-fullview.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+div {
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
+  margin: 30px;
+}
+
+.sun { background: #fefeb5; height: 2em; width: 2em; padding: 5em;}
+.jupiter { background: #ae9c86; height: 2em; width: 2em; padding: 4em;}
+.saturnus { background: #deb781; height: 2em; width: 2em; padding: 3.5em; border: 20px solid #343129;}
+.uranus { background: #91aab6; height: 2em; width: 2em; padding: 3em;}
+.neptunus { background: #2f6d9b; height: 2em; width: 2em; padding: 2em;}
+.pluto { background: #fcb712; height: 2em; width: 2em; }
+
+
+/* 👇 Schrijf je eigen CSS */
+

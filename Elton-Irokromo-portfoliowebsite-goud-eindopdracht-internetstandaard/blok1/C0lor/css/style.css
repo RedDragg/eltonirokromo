@@ -1,0 +1,41 @@
+/* Zet de vlakken naast elkaar en geeft ze een border */
+
+body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr)
+}
+
+div {
+  border: 1px solid black;
+  height: 100vh;
+}
+
+/* 👇 Vul steeds de background property in */
+
+div:nth-child(1) {
+  background: red;
+}
+
+div:nth-child(2) {
+  background: orange;
+}
+
+div:nth-child(3) {
+  background: yellow;
+}
+
+div:nth-child(4) {
+  background: greenyellow; 
+}
+
+div:nth-child(5) {
+  background: #32a852;
+}
+
+div:nth-child(6) {
+  background: rgb(50, 168, 164);
+}
+
+div:nth-child(7) {
+  background: hsl(237, 54%, 43%);
+}

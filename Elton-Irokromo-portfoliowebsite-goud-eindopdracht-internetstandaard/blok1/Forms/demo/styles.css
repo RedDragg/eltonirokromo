@@ -1,0 +1,53 @@
+body {
+	background-color: hotpink;
+}
+
+html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header, main {
+	background: lightcyan;
+	width: 50%;
+	max-width: 40em;
+	margin: 0 auto;
+	border-radius: 2em;
+}
+
+h1, h2 {
+	margin: 2em 0;
+	padding: 1em;
+	background: lightskyblue;
+	color: black;
+}
+
+form {
+	padding: 1em;
+}
+
+fieldset {
+	border: none;
+	margin: 1em 0;
+}
+
+legend {
+	font-size: 1.2em;
+	background: lightskyblue;
+	color: black;
+	padding: .25em;
+	margin: 1em 0;
+}
+
+input[type="submit"] {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: hotpink;
+	background: white;
+	border: 2px solid black;
+	border-radius: .5em;
+	padding: .5em 1em;
+	cursor: pointer;
+}
