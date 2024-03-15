@@ -16,3 +16,13 @@ mailParagraph.addEventListener("copy", function(event) {
         }, 2000); // Hier kun je de weergavetijd van het bericht aanpassen (in milliseconden)
     }
 });
+
+// <------------Side navbar------------->
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-15rem";
+}
