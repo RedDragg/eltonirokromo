@@ -1,0 +1,774 @@
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/****************/
+/* MAIN SECTION 1 */
+/****************/
+
+main section:first-of-type{
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+}
+
+main section:first-of-type h2{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    font-size: 1.575em;
+    font-family: reithsansB;
+    font-weight: lighter;
+}
+
+main section:first-of-type h2::after{
+    content:" ";
+    display: block;
+    height: 0.1em;
+    width: 100%;
+    background-color: black;
+}
+
+main section:first-of-type > ul{
+    list-style: none;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 45vw 45vw;
+}
+
+main section:first-of-type > ul li:first-of-type ul{
+    list-style: none;
+    display: grid;
+}
+
+main section:first-of-type > ul li:first-of-type ul li:first-of-type{
+    order: 1;
+}
+
+main section:first-of-type > ul > li:first-of-type{
+    display: grid;
+    gap: 1em;
+    cursor: pointer;
+    grid-column: span 2;
+    border-bottom: 1px solid rgb(186,186,186);
+     padding-bottom: 1em;
+}
+
+main section:first-of-type ul li:first-of-type ul li img{
+    width: 100%;
+}
+
+main section:first-of-type ul li:first-of-type ul li a{
+    order: 1;
+    text-decoration: none;
+    font-family: reithsansB;
+    font-weight: lighter;
+    font-size: 1.675em;
+    color: black;
+}
+
+main section:first-of-type > ul > li:first-of-type:hover ul li a{
+    text-decoration: underline;
+    color: #b80000;
+}
+
+main section:first-of-type > ul > li:nth-of-type(2),
+main section:first-of-type ul li:nth-of-type(3){
+    background-color: #e3e3e3;
+    cursor: pointer;
+}
+
+main section:first-of-type > ul > li:nth-of-type(2) ul,
+main section:first-of-type ul li:nth-of-type(3) ul{
+    list-style: none;
+}
+
+main section:first-of-type > ul > li:nth-of-type(2) ul li:first-of-type{
+    background-color: #b80000;
+    padding: 0.5em;
+    display: flex;
+    gap: 1em;
+}
+
+main section:first-of-type > ul > li:nth-of-type(3) ul li:first-of-type{
+    background-color: black;
+    padding: 0.5em;
+    display: flex;
+    gap: 1em;
+}
+
+main section:first-of-type > ul > li:nth-of-type(2) ul li:first-of-type a,
+main section:first-of-type > ul > li:nth-of-type(3) ul li:first-of-type a{
+    color: #F2EFEC;
+    font-size: 1.2em;
+}
+
+main section:first-of-type ul > li:nth-of-type(2) ul li:first-of-type img,
+main section:first-of-type ul > li:nth-of-type(3) ul li:first-of-type img{
+    width: 1.375em;
+    height: 1.375em;
+}
+
+main section:first-of-type ul li:nth-of-type(2) ul > li:last-of-type,
+main section:first-of-type ul li:nth-of-type(3) ul > li:last-of-type{
+    padding: 1em;
+}
+
+main section:first-of-type ul li:nth-of-type(2) ul > li:last-of-type a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-family: reithsansB;
+    font-weight: lighter;
+}
+
+main section:first-of-type ul li:nth-of-type(3) ul > li:last-of-type a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+    font-family: reithsansB;
+    font-weight: lighter;
+}
+
+
+main section:first-of-type ul li:nth-of-type(2):hover ul > li:last-of-type a,
+main section:first-of-type ul li:nth-of-type(3):hover ul > li:last-of-type a{
+    text-decoration: underline;
+    color: #b80000;
+}
+
+main section:first-of-type ul li:nth-of-type(2) > ul li:last-of-type p,
+main section:first-of-type ul li:nth-of-type(3) > ul li:last-of-type p{
+    font-size: 1.2em;
+    color: #4a4a4a;
+    font-family: reithsansR;
+    font-weight: lighter;
+}
+
+main section:first-of-type > ul > li:nth-of-type(4){
+    grid-column: span 2;
+    border-top: 1px solid var(--color-rightborder-signin);
+    border-bottom: 1px solid var(--color-rightborder-signin);
+    padding: 1em 0em;
+}
+
+main section:first-of-type ul li:nth-of-type(4) > ul,
+main section:first-of-type ul li:nth-of-type(5) > ul,
+main section:first-of-type ul li:nth-of-type(6) > ul,
+main section:first-of-type ul li:nth-of-type(7) > ul,
+main section:first-of-type ul li:nth-of-type(8) > ul{
+    display: grid;
+    grid-template-columns: 47vw 47vw;
+    list-style: none;
+    cursor: pointer;
+}
+main section:first-of-type ul li:nth-of-type(4) >  ul li:first-of-type a,
+main section:first-of-type ul li:nth-of-type(5) >  ul li:first-of-type a,
+main section:first-of-type ul li:nth-of-type(6) >  ul li:first-of-type a,
+main section:first-of-type ul li:nth-of-type(7) >  ul li:first-of-type a,
+main section:first-of-type ul li:nth-of-type(8) >  ul li:first-of-type a{
+    font-size: 1.2em;
+    color: #4a4a4a;
+    font-family: reithsansR;
+}
+
+main section:first-of-type ul li:nth-of-type(4):hover >  ul li:first-of-type a,
+main section:first-of-type ul li:nth-of-type(5):hover >  ul li:first-of-type a,
+main section:first-of-type ul li:nth-of-type(6):hover >  ul li:first-of-type a,
+main section:first-of-type ul li:nth-of-type(7):hover >  ul li:first-of-type a,
+main section:first-of-type ul li:nth-of-type(8):hover >  ul li:first-of-type a{
+    text-decoration: underline;
+    color: #b80000;
+}
+
+main section:first-of-type ul li:nth-of-type(4) >  ul li:last-of-type,
+main section:first-of-type ul li:nth-of-type(5) >  ul li:last-of-type,
+main section:first-of-type ul li:nth-of-type(6) >  ul li:last-of-type,
+main section:first-of-type ul li:nth-of-type(7) >  ul li:last-of-type,
+main section:first-of-type ul li:nth-of-type(8) >  ul li:last-of-type{
+    position: relative;
+    order: -1;
+}
+
+main section:first-of-type ul li:nth-of-type(4) >  ul li:last-of-type img:first-of-type,
+main section:first-of-type ul li:nth-of-type(5) >  ul li:last-of-type img:first-of-type,
+main section:first-of-type ul li:nth-of-type(6) >  ul li:last-of-type img:first-of-type,
+main section:first-of-type ul li:nth-of-type(7) >  ul li:last-of-type img:first-of-type,
+main section:first-of-type ul li:nth-of-type(8) >  ul li:last-of-type img:first-of-type{
+    width: 96%;
+}
+
+main section:first-of-type ul li:nth-of-type(4) >  ul li:last-of-type img:last-of-type{
+    position: absolute;
+    left: 0;
+    bottom: 0.3em;
+}
+
+main section:first-of-type ul li:nth-of-type(5),
+main section:first-of-type ul li:nth-of-type(6),
+main section:first-of-type ul li:nth-of-type(7){
+    grid-column: span 2;
+    padding: 1em 0em;
+    border-bottom: 1px solid var(--color-rightborder-signin);
+}
+
+/****************/
+/* MAIN SECTION 2 */
+/****************/
+
+main section:nth-of-type(2){
+    padding: 2em;
+    gap: 1em;
+    display: grid;
+}
+
+main section:nth-of-type(2) > ul:first-of-type{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+}
+
+main section:nth-of-type(2) > ul h2{
+    font-size: 1.575em;
+    font-family: reithsansB;
+    font-weight: lighter;
+
+}
+
+main section:nth-of-type(2) p{
+    font-size: 1.375em;
+    font-family: reithsansR;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+main section:nth-of-type(2) ul li p span{
+    color: #b80000;
+    font-size: 2.5em;
+    font-family: reithsansR;
+    font-weight: lighter;
+    padding-right: 0.25em;
+    display: inline-block;
+}
+
+main section:nth-of-type(2) ul li:hover p{
+    text-decoration: underline;
+    color: #b80000;
+}
+
+
+/****************/
+/* MAIN SECTION 3 */
+/****************/
+
+main section:nth-of-type(3){
+    padding: 2em;
+    display: grid;
+    gap: 1em;
+}
+
+main section:nth-of-type(3) a{
+    font-family: reithsansR;
+    font-size: 1.375em;
+    font-weight: lighter;
+    color: rgb(5, 5, 5);
+}
+
+main section:nth-of-type(3) ul:first-of-type{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+}
+
+main section:nth-of-type(3) ul:first-of-type h2{
+    font-size: 1.575em;
+}
+
+main section:nth-of-type(3) ul:last-of-type{
+    display: grid;
+    gap: 1em;
+}
+
+main section:nth-of-type(3) ul:last-of-type li:first-of-type{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    border-bottom: 1px solid var(--color-rightborder-signin);
+    padding-bottom: 1em;
+    cursor: pointer;
+}
+main section:nth-of-type(3) ul:last-of-type li:first-of-type img{
+    width: 100%;
+    order: -1;
+}
+
+main section:nth-of-type(3) ul:last-of-type li:not(:first-of-type){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    border-bottom: 1px solid var(--color-rightborder-signin);
+    padding-bottom: 1em;
+    cursor: pointer;
+}
+
+main section:nth-of-type(3) ul:last-of-type li:not(:first-of-type) img{
+    width: 100%;
+    order: -1;
+
+}
+
+main section:nth-of-type(3) ul:last-of-type li:hover a,
+main section:nth-of-type(3) ul:last-of-type li:first-of-type:hover a{
+    color: #b80000;
+    text-decoration: underline;
+}
+
+/****************/
+/* MAIN SECTION 4 */
+/****************/
+main section:nth-of-type(4){
+    display: grid;
+    padding: 0 2em;
+    gap: 1em;
+}
+
+main section:nth-of-type(4) > ul:first-of-type{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+}
+
+main section:nth-of-type(4) > ul:first-of-type li:first-of-type h2{
+    font-size: 1.575em;
+}
+
+main section:nth-of-type(4) > ul:last-of-type{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+main section:nth-of-type(4) > ul:last-of-type li:last-of-type{
+    order: -1;
+    display: flex;
+    gap: 2em;
+}
+
+main section:nth-of-type(4) > ul:last-of-type li:last-of-type img{
+    width: 5em;
+    height: 5em;
+    cursor: pointer;
+    padding: 1em;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:last-of-type img:first-of-type:hover{
+    content: url(../images/news/icons8-twitter-48hover.png);
+    background-color: #03A9F4;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:last-of-type img:nth-of-type(2):hover{
+    content: url(../images/news/icons8-facebook-30hover.png);
+    background-color:#3D5A98
+;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:last-of-type img:last-of-type:hover{
+    content: url(../images/news/icons8-instagram-48hover.png);
+    background-color: #E26397;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:first-of-type ul li:first-of-type,
+main section:nth-of-type(4) ul:last-of-type li:nth-of-type(2) ul li:first-of-type{
+    display: flex;
+    align-items: center;
+    order: -1;
+    cursor: pointer;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:first-of-type ul li:first-of-type h3,
+main section:nth-of-type(4) ul:last-of-type li:nth-of-type(2) ul li:first-of-type h3 {
+    border-left: 1px solid black;
+    padding-left: 1em;
+    font-size: 1.675em;
+    color: #202020;
+    font-family: reithsansB;
+    font-weight: lighter;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:first-of-type ul li:first-of-type img,
+main section:nth-of-type(4) ul:last-of-type li:nth-of-type(2) ul li:first-of-type img{
+    width: 4em;
+    height: 3em;
+    order: -1;
+    padding-right: 1em;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:first-of-type ul li:last-of-type a{
+    color: #4a4a4a;
+    font-family: reithsansR;
+    font-size: 1.2em;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:nth-of-type(2) ul li:last-of-type a{
+    color: #202020;
+    font-family: reithsansR;
+    font-size: 1.2em;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:first-of-type:hover ul li:last-of-type a,
+main section:nth-of-type(4) ul:last-of-type li:nth-of-type(2):hover ul li:last-of-type a{
+    text-decoration: underline;
+    color: #b80000;
+}
+
+main section:nth-of-type(4) ul:last-of-type li ul{
+    display: grid;
+    gap: 0.5em;
+}
+
+main section:nth-of-type(4) ul:last-of-type{
+    display: grid;
+    gap: 2em;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:nth-of-type(3){
+    display: grid;
+    gap: 0.5em;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:nth-of-type(3) p{
+    color: #4a4a4a;
+    font-size: 1.2em;
+    font-family: reithsansR;
+    font-weight: lighter;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:nth-of-type(3) a{
+    color: #202020;
+    padding-left: 0.3em;
+    font-size: 1em;
+    font-family: reithsansR;
+}
+
+main section:nth-of-type(4) ul:last-of-type li:nth-of-type(3) a:hover
+{
+    text-decoration: underline;
+    color: #b80000;
+}
+
+
+
+
+
+/****************/
+/* MEDIA QUERY 600PX */
+/****************/
+
+@media (width > 37.5em){ 
+
+    main section:first-of-type ul li:first-of-type ul li a{
+        font-size: 2em;
+    }
+
+    main section:first-of-type h2{
+        grid-template-columns: 20% 80%;
+        font-size: 2em;
+    }
+
+    main section:first-of-type > ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+
+     main section:first-of-type > ul > li:first-of-type{
+        grid-column: span 3;
+     }
+
+     main section:first-of-type > ul li:first-of-type ul{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+     }
+
+     main section:first-of-type > ul li:first-of-type ul li:last-of-type{
+        grid-column: span 2;
+     }
+
+     main section:first-of-type > ul > li:nth-of-type(3){
+        order: 3;
+     }
+
+     main section:first-of-type > ul > li:nth-of-type(4){
+        grid-row: span 2;
+        order: 1;
+        grid-column:auto;
+     }
+
+     main section:first-of-type > ul > li:nth-of-type(5){
+        grid-row: span 2;
+        order: 2;
+        grid-column: auto
+     }
+
+     main section:first-of-type > ul > li:nth-of-type(6){
+        order: 4;
+     }
+     main section:first-of-type > ul > li:nth-of-type(7){
+        order: 5;
+     }
+     main section:first-of-type > ul > li:nth-of-type(8){
+        order: 6;
+     }
+     main section:first-of-type ul li:nth-of-type(4) > ul, main section:first-of-type ul li:nth-of-type(5) > ul, main section:first-of-type ul li:nth-of-type(6) > ul, main section:first-of-type ul li:nth-of-type(7) > ul, main section:first-of-type ul li:nth-of-type(8) > ul{
+        display: flex;
+        flex-direction: column;
+     }
+
+     main section:first-of-type ul li:nth-of-type(5), main section:first-of-type ul li:nth-of-type(6), main section:first-of-type ul li:nth-of-type(7), main section:first-of-type ul li:nth-of-type(8){
+        grid-column: auto;
+     }
+
+     main section:first-of-type > ul > li:first-of-type,
+     main section:first-of-type > ul > li:nth-of-type(4),
+     main section:first-of-type ul li:nth-of-type(5),
+     main section:first-of-type ul li:nth-of-type(6),
+     main section:first-of-type ul li:nth-of-type(7),
+     main section:first-of-type ul li:nth-of-type(8){
+        border-bottom: 0.1em solid transparent;
+        border-top: 0.1em solid transparent;
+     }
+
+     main section:first-of-type > ul > li:nth-of-type(4),
+     main section:first-of-type > ul > li:nth-of-type(5){
+        padding: 0;
+     }
+
+     main section:first-of-type ul li:last-of-type ul{
+        padding-top: 1em;
+     }
+
+
+
+    main section:nth-of-type(2) > ul:first-of-type{
+        grid-template-columns: 30% 70%;
+    }
+    main section:nth-of-type(2) > ul:first-of-type h2{
+        font-size: 2em;
+    }
+    main section:nth-of-type(2) > ul:last-of-type{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main section:nth-of-type(3) ul:first-of-type h2{
+        font-size: 2em;
+    }
+
+    main section:nth-of-type(3) ul:last-of-type{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main section:nth-of-type(3) ul:last-of-type li:first-of-type{
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: span 3;
+        border-bottom: 0.1em solid transparent;
+    }
+
+    main section:nth-of-type(3) ul:last-of-type li:first-of-type a{
+        padding: 0.5em;
+        font-family: reithsansB;
+        font-size: 2em;
+        color: #4a4a4a;
+    }
+
+    main section:nth-of-type(3) ul:last-of-type li:first-of-type img{
+        grid-column: span 2;
+
+    }
+    main section:nth-of-type(3) ul:last-of-type li:not(:first-of-type){
+        grid-template-columns: 1fr;
+        border-bottom: 0.1em solid transparent;
+    }
+
+    main section:nth-of-type(4) > ul:last-of-type{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main section:nth-of-type(4) > ul:last-of-type li:last-of-type{
+        grid-column: span 2;
+    }
+
+    main section:nth-of-type(4) > ul:last-of-type li:last-of-type img{
+        width: 6em;
+        height: 6em;
+    }
+
+    main section:nth-of-type(4) > ul:first-of-type{
+        grid-template-columns: 25% 75%;
+    }
+    
+    main section:nth-of-type(4) > ul:first-of-type li:first-of-type h2{
+        font-size: 2em;
+    }
+
+    main section:nth-of-type(4) ul:last-of-type li:first-of-type ul{
+        border-left: 1px solid black;
+        padding-left: 1em;
+    }
+
+}
+    
+@media (width > 56.25em){ 
+    main section:nth-of-type(4) > ul:last-of-type{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main section:nth-of-type(4) > ul:last-of-type li:last-of-type{
+        grid-column: span 3;
+    }
+}
+
+
+@media (width > 1000px){ 
+    main section:first-of-type > ul > li:nth-of-type(5){
+        padding-top: 1em;
+    }
+
+    main section:nth-of-type(2) > ul:first-of-type{
+        grid-template-columns: 20% 80%;
+    }
+
+    main section:first-of-type > ul{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    main section:first-of-type > ul > li:first-of-type{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    main section:first-of-type > ul li:first-of-type ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    main section:first-of-type > ul > li:nth-of-type(3){
+        order: 2;
+    }
+    main section:first-of-type h2{
+        grid-template-columns: 10% 90%;
+    }
+    main{
+        display: grid;
+        justify-content: center;
+    }
+
+    main section{
+        width: 90em;
+    }
+
+    nav:first-of-type, header > nav:nth-of-type(2){
+        width: 90em;
+    }
+
+    main section:nth-of-type(3) ul:last-of-type{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    main section:nth-of-type(3) ul:last-of-type li:first-of-type{
+        grid-column: span 2;
+        grid-template-columns: 1fr;
+    }
+
+    main section:nth-of-type(3) ul:last-of-type li:nth-of-type(2),
+    main section:nth-of-type(3) ul:last-of-type li:nth-of-type(3){
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section:nth-of-type(4) > ul:last-of-type{
+        grid-template-columns: repeat(3, 33%);
+    }
+    main section:nth-of-type(4) > ul:last-of-type li:last-of-type{
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    main section:nth-of-type(4) ul:last-of-type li:nth-of-type(3){
+        grid-column: span 2;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main section:nth-of-type(4) ul:last-of-type li:nth-of-type(3) p:first-of-type{
+        order: 1;
+    }
+
+    main section:nth-of-type(4) ul:last-of-type li:nth-of-type(3) p:nth-of-type(2){
+        order: -1;
+    }
+
+    main section:nth-of-type(4) > ul:last-of-type li:last-of-type img{
+        width: 7em;
+        height: 7em;
+    }
+
+    main section:nth-of-type(4) > ul:first-of-type{
+        grid-template-columns: 20% 80%;
+    }
+
+    main section:nth-of-type(4) ul:last-of-type li:nth-of-type(3) a{
+        padding-left: 1em;
+    }
+
+
+}
+
+
+@media (width > 80em){ 
+
+    main section:first-of-type > ul{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 25%);
+    }
+
+    main section:first-of-type > ul > li:first-of-type{
+        grid-row: span 3;
+    }
+
+    main section:first-of-type > ul > li:nth-of-type(4),
+    main section:first-of-type > ul > li:nth-of-type(5),
+    main section:first-of-type > ul > li:nth-of-type(6),
+    main section:first-of-type > ul > li:nth-of-type(7){
+        grid-row: span 2;
+    }
+
+    main section:first-of-type > ul > li:nth-of-type(3){
+        order: 3;
+    }
+
+    main section:nth-of-type(3) ul:last-of-type{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    main section:nth-of-type(3) ul:last-of-type li:first-of-type{
+        grid-row: span 2;
+    }
+
+    main section,
+    nav:first-of-type, header > nav:nth-of-type(2){
+        width: 105em;
+    }
+    main section:nth-of-type(2) > ul:last-of-type{
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2em;
+    }
+
+    main section:nth-of-type(3) ul:last-of-type li:first-of-type a{
+        padding: 0 0 1em 0;
+    }
+
+
+}
+/* BRONNEN: 
+SPAN: INLINE BLOCK | https://stackoverflow.com/questions/67321358/how-do-i-exclude-span-inside-p-tag-while-applying-css
+URL IN CSS | https://sabe.io/blog/css-set-img-src */
