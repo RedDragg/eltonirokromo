@@ -142,13 +142,13 @@ nav > i {
 }
 
 .header-text h1{
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 3rem;
     position: relative;
 }
 
 .header-text p{
-    font-size: .7em;
+    font-size: 1rem;
     position: relative;
 }
 
@@ -160,7 +160,7 @@ nav > i {
     text-decoration: none;
     cursor: default;
     pointer-events: none;
-    font-size: 1em;
+    font-size: 1.5em;
     color: var(--color-text);
 }
 
@@ -303,7 +303,7 @@ img#moon{
 }
 
 .tab-links{
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -337,7 +337,7 @@ img#moon{
 
 
 .tab-contents ul li p{
-    font-size: .8rem;
+    font-size: 1rem;
 }
 .tab-contents{
     display: none;
@@ -384,7 +384,7 @@ img#moon{
     transition: background 0.5s, transform 0.5s;
     display: grid;
     grid-gap: 1em;
-    max-width: 20em;
+    max-width: 25rem;
 }
 
 .services-list div > i{
@@ -392,7 +392,7 @@ img#moon{
 }
 
 .services-list div h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -405,6 +405,7 @@ img#moon{
 
 .morebtn{
     cursor: pointer;
+    font-size: 1.5rem;
 }
 
 .morebtn i{
@@ -467,6 +468,7 @@ img#moon{
      padding: .5em .5em;
      text-align: center;
      transition: all .5s;
+     font-size: 1.5rem;
 }
 
 .workcontainer{
@@ -482,13 +484,14 @@ img#moon{
     flex-direction: column;
     align-items: center;
     gap: 1em;
+    text-align: center;
 }
 
 .work-list{
     display: flex;
     flex-direction: column;
     gap: 2em;
-    max-width: 20em;
+    max-width: 25rem;
     background: #080808;
     padding: 2em;
     transition: all .5s;
@@ -496,6 +499,7 @@ img#moon{
 
 .work-list:hover .work-titles > h3{
     background: var(--color-secundaire);
+
 }
 .work-list:hover{
     transform: translateY(-.5em);
@@ -566,10 +570,6 @@ img#moon{
     transition: right .5s;
 }
 
-#casestudy img{
-    max-width: 20em;
-}
-
 .studycontainer{
     padding: 2em;
     max-width: 35em;
@@ -583,7 +583,7 @@ img#moon{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    font-size: .8em;
+    font-size: 1rem;
 }
 
 .studytitle{
@@ -803,7 +803,7 @@ img#moon{
     }
 
     nav ul li a{
-        font-size: 1em;
+        font-size: 1.5rem;
     }
     section #moon{
         transform: translateX(13em);
