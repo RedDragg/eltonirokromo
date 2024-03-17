@@ -477,7 +477,6 @@ img#moon{
     flex-direction: row;
     justify-content: space-between;
     min-width: 2rem;
-    max-width: 25rem;
 }
 
 .work-titles{
@@ -493,6 +492,7 @@ img#moon{
     flex-direction: column;
     gap: 2em;
     max-width: 25rem;
+    min-width: 2rem;
     background: #080808;
     padding: 2em;
     transition: all .5s;
