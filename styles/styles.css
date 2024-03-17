@@ -771,6 +771,7 @@ img#moon{
     display: flex;
     flex-direction: column;
     gap: 2em;
+    font-size: 1.1rem;
 }
 
 
