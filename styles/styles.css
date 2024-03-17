@@ -17,6 +17,7 @@
     --color-background-services: #000000;
     --color-background-services-list: #FFF;
     --color-font-services: #000000;
+    --color-scrollomhoog: #679413;
   }
 
 
@@ -29,6 +30,10 @@ body{
     background: var(--color-background);
     overflow-x: hidden;
     color: var(--color-text);
+}
+
+main{
+    background: var(--color-background-aboutme);
 }
 
 .bold{
@@ -85,7 +90,7 @@ nav ul{
     width: 50vw;
     height: 100vh;
     padding-top: 3em;
-    z-index: 2;
+    z-index: 1001;
     transition: right .5s;
 }
 
@@ -135,6 +140,18 @@ nav > i {
     cursor: pointer;
 }
 
+.scrollomhoog{
+    position: sticky;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--color-scrollomhoog);
+    z-index: 4;
+}
+
 .header-text{
     display: flex;
     flex-direction: column;
@@ -182,7 +199,7 @@ section::before{
     width: 100%;
     height: 64px;
     background: linear-gradient(to top, var(--color-background-aboutme), transparent);
-    z-index: 100;
+    z-index: 3;
 }
 
 section img{
@@ -363,7 +380,7 @@ img#moon{
     width: 100%;
     height: 64px;
     background: linear-gradient(to top, var(--color-background-mywork), transparent);
-    z-index: 100;
+    z-index: 4;
 }
 
 .services-list{
