@@ -495,6 +495,7 @@ img#moon{
     background: #080808;
     padding: 2em;
     transition: all .5s;
+    font-size: 1.1rem;
 }
 
 .work-list:hover .work-titles > h3{
@@ -704,6 +705,7 @@ img#moon{
     flex-direction: column;
     gap: 3em;
     align-items: center;
+    font-size: 1.2rem;
 }
 
 
