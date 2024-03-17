@@ -282,6 +282,7 @@ img#moon{
   gap: 1em;
   overflow: hidden;
   font-size: 1.2rem;
+  max-width: 50rem;
 }
 
 .about-col-1 img{
