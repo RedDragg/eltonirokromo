@@ -1,4 +1,7 @@
-
+function sidemenu() {
+    let menu = document.getElementById("sidemenu");
+    menu.classList.toggle("sidemenu");
+  } 
 
 // <------------Parralax Scrolling------------->
 let frame_behind = document.getElementById('frame_behind');
@@ -136,12 +139,12 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-var sidemenu = document.getElementById("casestudy");
+var sidemenu1 = document.getElementById("casestudy");
 var sidemenu2 = document.getElementById("casestudy2");
 var sidemenu3 = document.getElementById("casestudy3");
 
 function worklinkopen(){
-    sidemenu.style.right = "0";
+    sidemenu1.style.right = "0";
 }
 function worklinkopen2(){
     sidemenu2.style.right = "0";
@@ -150,7 +153,7 @@ function worklinkopen3(){
     sidemenu3.style.right = "0";
 }
 function worklinkclose(){
-    sidemenu.style.right = "-140rem";
+    sidemenu1.style.right = "-140rem";
 }
 function worklinkclose2(){
     sidemenu2.style.right = "-140rem";
@@ -158,11 +161,6 @@ function worklinkclose2(){
 function worklinkclose3(){
     sidemenu3.style.right = "-140rem";
 }
-
-
-
-
-
 
 
 let slideIndex = 1;
