@@ -256,7 +256,7 @@ img#moon{
 }
 
 .logos-slide img{
-    height: 4rem;
+    height: 3rem;
     margin: 0 1rem;
 }
 
@@ -846,6 +846,10 @@ img#moon{
     align-items: center;
 }
 
+.logos-slide img{
+    height: 4rem;
+    margin: 0 1rem;
+}
 
 .tab-links{
     font-size: 1.5em;
