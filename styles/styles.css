@@ -582,7 +582,7 @@ img#moon{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .studytitle{
@@ -840,20 +840,24 @@ img#moon{
         grid-template-columns: 20em 1fr;
       }
 
-  #casestudy,
-#casestudy2,
-#casestudy3{
-    align-items: center;
-}
+    #casestudy,
+    #casestudy2,
+    #casestudy3{
+        align-items: center;
+    }
 
-.logos-slide img{
-    height: 4rem;
-    margin: 0 1rem;
-}
+    .logos-slide img{
+        height: 4rem;
+        margin: 0 1rem;
+    }
 
-.tab-links{
-    font-size: 1.5em;
-}
+    .tab-links{
+        font-size: 1.5em;
+    }
+
+    .studyrow{
+        font-size: 1rem;
+    }
 }
 
 @media (width > 1000px){ 
