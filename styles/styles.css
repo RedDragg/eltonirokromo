@@ -89,6 +89,10 @@ nav ul{
     transition: right .5s;
 }
 
+.sidemenu{
+    right: 0;
+}
+
 nav ul li{
     display: block;
     list-style: none;
@@ -804,14 +808,6 @@ img#moon{
     section #moon{
         transform: translateX(13em);
     }
-    #frame_front{
-        transform: translateY(15em);
-    }
-
-    #frame_behind
-    {
-        transform: translateY(10em);
-    }
 
     .contacttext{
         display: flex;
@@ -876,7 +872,4 @@ img#moon{
     font-size: 4em;
 }
 
-#frame_front{
-    transform: translateY(19em);
-}
 }
