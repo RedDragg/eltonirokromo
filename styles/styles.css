@@ -291,7 +291,7 @@ img#moon{
 }
 
 .sub-title{
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 600;
     color: #fff;
 }
@@ -302,7 +302,7 @@ img#moon{
 }
 
 .tab-links{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     cursor: pointer;
     position: relative;
