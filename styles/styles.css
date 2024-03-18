@@ -149,7 +149,7 @@ nav > i {
     font-size: 1.5rem;
     text-decoration: none;
     color: var(--color-scrollomhoog);
-    z-index: 101;
+    z-index: 99;
 }
 
 .scrollomhoog > i{
