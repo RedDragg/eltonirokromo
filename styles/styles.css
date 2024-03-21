@@ -411,7 +411,7 @@ img#moon{
     transition: background 0.5s, transform 0.5s;
     display: grid;
     grid-gap: 1em;
-    max-width: 25rem;
+    max-width: 21rem;
 }
 
 .services-list div > i{
@@ -519,7 +519,7 @@ img#moon{
     display: flex;
     flex-direction: column;
     gap: 2em;
-    max-width: 25rem;
+    max-width: 22rem;
     min-width: 2rem;
     background: #080808;
     padding: 2em;
@@ -971,4 +971,14 @@ footer{
     font-size: 4em;
 }
 
+}
+
+@media (width > 1600px){ 
+    .services-list div{
+        max-width: 25rem;
+    }
+
+    .work-list{
+        max-width: 25rem;
+    }
 }
