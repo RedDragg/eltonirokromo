@@ -54,7 +54,7 @@ nav ul{
 }
 
 .sidemenu2{
-  right: -17%;
+  right: 0;
 }
 
 nav ul li{
@@ -214,6 +214,7 @@ color: white
 nav ul{
   right: 0;
   width: 20vw;
+  right: -17%;
 }
 
 nav ul .fas{
