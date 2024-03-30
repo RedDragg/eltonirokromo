@@ -5,195 +5,254 @@
   box-sizing: border-box;
 }
 
-
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  }
-
-  .fixed-button {
-    z-index: 9999;
-    position: fixed;
-    top: 5em;
-
-  }
-  
-
-  .container {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    padding: 2em;
-    gap: .5em;
-  }
-  
-  .button {
-    --b: 3px;   /* border thickness */
-    --s: .45em; /* size of the corner */
-    --color: #373B44;
-    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-    color: var(--color);
-    --_p: var(--s);
-    background:
-      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-    transition: .3s linear, color 0s, background-color 0s;
-    outline: var(--b) solid #0000;
-    outline-offset: .6em;
-    border: 0;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-
-  .button:hover,
-  .button:focus-visible{
-    --_p: 0px;
-    outline-color: var(--color);
-    outline-offset: .05em;
-    color: #fff;
-  }
-  
-  .button:active {
-    background: var(--color);
-    color: #fff;
-  }
-  
-  .myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-  } 
-
-  h1 {
-    text-align: center;
-  }
-
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  input[type=number] {
-    -moz-appearance: textfield;
-  }
-
-  #guessForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-  }
-
-div.inputborder {
-    width: 5em;
-    height: 5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  #guessInput {
-    width: 2.5em;
-    height: 2.5em;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    font-size: 2em;
-    border-radius: 0.5em;
-    text-align: center;
-  }
-
-  .submit {
-    align-items: center;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    border: 0;
-    border-radius: 8px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    display: flex;
-    font-family: Phantomsans, sans-serif;
-    font-size: 20px;
-    justify-content: center;
-    line-height: 1em;
-    max-width: 100%;
-    min-width: 140px;
-    padding: 3px;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    cursor: pointer;
-  }
-
-  .submit:active,
-  .submit:hover {
-  outline: 0;
+body{
+overflow-x: hidden;
+overflow-y: hidden;
 }
 
-.submit span {
-  background-color: rgb(5, 6, 45);
-  padding: 16px 24px;
-  border-radius: 6px;
-  width: 100%;
-  height: 100%;
-  transition: 300ms;
+nav ul li h1, h2{
+color: white;
+text-transform: capitalize;
+overflow: hidden;
 }
 
-.submit:hover span {
-  background: none;
+.logo{
+color: white;
+font-weight: 700;
+text-decoration: none;
+font-size: 2rem;
+text-transform: uppercase;
+letter-spacing: 2px;
 }
 
-
-
-  #result {
-    margin-top: 20px;
-    font-size: 18px;
-    text-align: center;
-  }
-
-div.wrapper{
-    position: fixed;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-    padding: .2em;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-}
-div.div_backblock {
-    background-color: #e8ecf3;
-    align-self: center;
-    padding: 1.8em;
+.logo span{
+color: gray;
 }
 
-div.guessWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-        
-.confetti{
-    background-image: url("https://media.giphy.com/media/PMV7yRpwGO5y9p3DBx/source.gif");
-    background-size: contain;
-    color: white
-    }
-
-#time {
-  position: fixed;
+nav {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 10%;
+} 
+
+nav ul{
+  background: #AF40FF;
+  position: fixed;
+  top: 0;
+  right: -26rem;
+  width: 50vw;
+  height: 100vh;
+  padding-top: 3em;
+  z-index: 1001;
+  transition: right .5s;
 }
+
+.sidemenu{
+  right: 0;
+}
+
+.sidemenu2{
+  right: -17%;
+}
+
+nav ul li{
+  display: block;
+  list-style: none;
+  margin: 1.5rem 2rem;
+  text-align: center;
+}
+
+nav ul li button {
+  padding: 12px;
+  border: none;
+  border-radius: 2rem 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+nav ul .fas{
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  cursor: pointer;
+  font-size: 2rem; 
+  color: white;
+}
+
+nav > i {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+main{
+display: flex;
+height: 100vh;
+width: 100%;
+justify-content: center;
+padding: 2rem 5%;
+}
+
+.myVideo {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%; 
+min-height: 100%;
+z-index: -1;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+padding: 2rem 2rem;
+background: white;
+border-radius: 2rem;
+gap: 2rem;
+text-align: center;
+position: relative;
+height: fit-content;
+}
+
+.container::before{
+content: '';
+position: absolute;
+background: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+z-index: -1;
+inset: -.2rem;
+border-radius: 2rem;
+box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+#guessField{
+font-size: 2rem;
+padding: .3rem;
+width: 4.5rem;
+height: 4rem;
+border: none;
+border-radius: 10px;
+align-self: center;
+text-align: center;
+background: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+
+input:focus{
+outline: none;
+}
+
+#submitGuessButton, #resetGameButton{
+padding: .8rem .2rem;
+border: none;
+border-radius: 5rem;
+width: fit-content;
+align-self: center;
+cursor: pointer;
+color: white;
+background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+line-height: 1em;    
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+white-space: nowrap;
+font-size: 1rem;
+}
+
+#submitGuessButton span,
+#resetGameButton span {
+background-color: rgb(5, 6, 45);
+padding: .5rem 2rem;
+border-radius: 5rem;
+width: 100%;
+height: 100%;
+transition: 300ms;
+}
+
+#submitGuessButton:hover span
+, #resetGameButton:hover span {
+background: none;
+}
+
+
+#resetGameButton{
+display: none;
+}
+
+.text{
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+.chevron-left {
+transform: rotate(180deg);
+}
+
+.chevron{
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  font-size: 1.8rem;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+.confetti{
+background-image: url("https://media.giphy.com/media/PMV7yRpwGO5y9p3DBx/source.gif");
+background-size: contain;
+color: white
+}
+
+
+@media (width > 1000px){ 
+nav ul{
+  right: 0;
+  width: 20vw;
+}
+
+nav ul .fas{
+  display: none;
+}
+
+.fa-bars{
+  display: none;
+}
+
+.chevron{
+  display: block;
+}
+
+.container{
+  gap: 3rem;
+  width: 30rem;
+}
+
+main p{
+  font-size: 1.5rem;
+}
+
+#guessField{
+  width: 6rem;
+  height: 6rem;
+  font-size: 3rem;
+}
+
+#submitGuessButton span, #resetGameButton span {
+  font-size: 1.5rem;
+}
+
+nav ul li button{
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+}
+
+
 

@@ -1,62 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numbahh</title>
+  <script src="https://kit.fontawesome.com/fee5056558.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header>
+
+   <nav>
+    <p class="logo"><span>E</span>lton.</p>
+    <ul id="sidemenu">
+      <li><h1>backgrounds</h1></li>
+        <li><button class="button" id="mijnKnop2">Road</button></li>
+        <li><button class="button" id="mijnKnop3">Neon</button></li>
+        <li><button class="button" id="mijnKnop5">Tunnel 1</button></li>
+        <li><button class="button" id="mijnKnop6">Tunnel 2</button></li>
+        <li><button class="button" id="mijnKnop7">Tunnel 3</button></li>
+        <li><button class="button" id="pausebtn" onclick="pausePlay()">Pause</button></li>
+        <li><h1>music</h1></li>
+        <li><button class="button" id="musicButton" >Vibezzz</button></li>
+        <i class="fa-solid fa-chevron-right chevron" id="chevron"></i>
+    <i class="fas fa-times none" onclick="sidemenu()"></i>
+</ul>
+<i class="fas fa-bars none" onclick="sidemenu()"></i>
+</nav>
+  </header>
+  <main>
     <video autoplay muted loop class="myVideo" id="achtergrondVideo">
-        <source src="./img/road.mp4" type="video/mp4">
-      </video>
-
-      <button id="fixedButton" class="fixed-button">Afspelen / Pauzeren</button>
-
-    <div class="wrapper">      
-        
-        <div class="div_backblock">
-            <h1 id="mijnH1">Numbahh</h1>
-            <form id="guessForm">
-                <label for="guessInput">Voer een getal in tussen 1 en 100:</label>
-                <div class="inputborder">
-                    <input type="number" min="1" max="100" id="guessInput">
-                </div>
-                <button type="submit" class="submit"><span class="text">Gokken</span></button>
-            </form>
-            <p id="result"></p>
-                <div class="guessWrapper">
-                    <p id="guesses"></p>
-                    
-                </div>
-                <div class="guessWrapper">
-                    <p id="time"></p>
-                </div>
-                
-            <script src="js/script.js"></script>
-        </div>
-    </div>
-
+      <source src="./img/road.mp4" type="video/mp4">
+    </video>
     <div class="container">
-        <button class="button" id="mijnKnop2">Road</button>
-        <button class="button" id="mijnKnop3">Neon</button>
-        <button class="button" id="mijnKnop5">Tunnel 1</button>
-        <button class="button" id="mijnKnop6">Tunnel 2</button>
-        <button class="button" id="mijnKnop7">Tunnel 3</button>
-      </div>
+      <h1>Numbahh</h1>
+      <p>Raad het getal tussen 1 and 100:</p>
+      <input type="numeric" id="guessField" min="1" max="100">
+      <button id="submitGuessButton" onclick="checkGuess()"><span class="text">Gokken</span></button>
+      <button id="resetGameButton" onclick="location.reload()"><span class="text">Reset</span></button>
+      <p id="guessResult"></p>
+      <p>Invoer register: <span id="guessHistory"></span></p>
+      <p id="timeTaken"></p>
+    </div>
+  </main>
 
-    <script src="./js/test.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
-
-<!--Bronnen:
-    Achtergrond videos : www.Pixabay.com
-    audio : www.Pixabay.com
-    CSS button : https://getcssscan.com/css-buttons-examples
-    Submit button = Button 64
-    Achtergrond Button = Button 89
--->
