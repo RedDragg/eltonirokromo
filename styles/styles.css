@@ -502,7 +502,7 @@ img#moon{
 
 .workcontainer{
     display: flex;
-    gap: 1em;
+    gap: 6em;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
@@ -588,7 +588,8 @@ img#moon{
 
 #casestudy,
 #casestudy2,
-#casestudy3{
+#casestudy3,
+#casestudy4{
     background: #080808;
     position: fixed;
     top: 0;
@@ -927,7 +928,8 @@ footer{
 
     #casestudy,
     #casestudy2,
-    #casestudy3{
+    #casestudy3,
+    #casestudy4{
         align-items: center;
     }
 
@@ -982,5 +984,9 @@ footer{
 
     .work-list{
         max-width: 25rem;
+    }
+
+    #work-list-4{
+        width: 25rem;
     }
 }

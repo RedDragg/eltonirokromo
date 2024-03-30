@@ -142,6 +142,7 @@ window.onload = function() {
 var sidemenu1 = document.getElementById("casestudy");
 var sidemenu2 = document.getElementById("casestudy2");
 var sidemenu3 = document.getElementById("casestudy3");
+var sidemenu4 = document.getElementById("casestudy4");
 
 function worklinkopen(){
     sidemenu1.style.right = "0";
@@ -152,6 +153,9 @@ function worklinkopen2(){
 function worklinkopen3(){
     sidemenu3.style.right = "0";
 }
+function worklinkopen4(){
+    sidemenu4.style.right = "0";
+}
 function worklinkclose(){
     sidemenu1.style.right = "-140rem";
 }
@@ -161,6 +165,10 @@ function worklinkclose2(){
 function worklinkclose3(){
     sidemenu3.style.right = "-140rem";
 }
+function worklinkclose4(){
+    sidemenu4.style.right = "-140rem";
+}
+
 
 
 let slideIndex = 1;
@@ -206,5 +214,6 @@ window.onload = function() {
     showSlides(1, 'work-list-1');
     showSlides(1, 'work-list-2');
     showSlides(1, 'work-list-3');
+    showSlides(1, 'work-list-4');
 };
 
