@@ -65,7 +65,7 @@ header .logo span{
 }
 
 .container{
-    padding: 2rem 10%;
+    padding: 11rem 10%;
     display: grid;
     grid-gap: 2rem;
 }
@@ -293,6 +293,8 @@ img#moon{
 #about{
     background: var(--color-background-aboutme);
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 .row{
     display: flex;
@@ -800,7 +802,7 @@ img#moon{
 }
 
 .mailcontainer{
-    padding: 2em 10%;
+    padding: 8em 10%;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -810,7 +812,7 @@ img#moon{
 footer{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 5rem;
     padding: 4rem 10%;
     text-align: center;
 }
