@@ -613,7 +613,7 @@ img#moon{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    font-size: .7rem;
+    font-size: .9rem;
 }
 
 .studytitle{
