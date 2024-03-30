@@ -65,7 +65,7 @@ header .logo span{
 }
 
 .container{
-    padding: 11rem 10%;
+    padding: 2rem 10%;
     display: grid;
     grid-gap: 2rem;
 }
@@ -502,7 +502,7 @@ img#moon{
 
 .workcontainer{
     display: flex;
-    gap: 6em;
+    gap: 2em;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
@@ -944,6 +944,13 @@ footer{
 
     .studyrow{
         font-size: 1rem;
+    }
+    .container{
+        padding: 11rem 10%;
+    }
+
+    .workcontainer{
+        gap: 6em;
     }
 }
 
